@@ -1,0 +1,129 @@
+html{
+     /* background: url("./img/Desktop\ -\ 2\ \(6\).png") repeat; */
+}
+body{
+    background: linear-gradient(45deg, #ff5e84 10%, #FFAA2C 100%);
+    color: white;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Rowdies';
+    background: url("./img/Desktop\ -\ 2\ \(6\).png") repeat;
+    background-size: contain;
+    overflow-x: hidden;
+    display: grid;
+    
+}
+.container{
+    overflow: hidden;
+}
+#background-img{
+    position: absolute;
+    /* background-image: url('./img/Desktop\ -\ 2.png'); */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background: url("./img/Desktop\ -\ 2\ \(6\).png") repeat;
+    top: 0;
+    height: 100vh;
+    width: 4320px;
+    z-index: -1;
+    animation: slide 60s linear infinite;
+    background-size: contain;
+}
+#main{
+    /* z-index: -2; */
+    /* background: url("./img/Desktop\ -\ 2\ \(6\).png") repeat; */
+    height: auto;
+}
+ul{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+li{
+    overflow-y: visible;
+    list-style: none;
+    font-size: 4em;
+    margin: .5em;
+    border: solid 4px white;
+    text-align: center;
+    display: inline;
+    border-radius: 7px;
+}
+#header{
+    text-align: center;
+}
+h1{
+    font-size: 6em;
+}
+h2{
+    font-size: 4.5em;
+    color: #BDFF51;
+    background: rgba(0, 0, 0, .2);
+}
+input{
+    height: 3em;
+    width: 6em;
+    text-align: center;
+    border: none;
+    border-radius: 7px;
+    font-size: 2em;
+}
+::placeholder{
+    color: black;
+}
+button{
+    margin: 1em;
+    height: 2.5em;
+    width: 6em;
+    font-size: 1.5em;
+    border: none;
+    color: black;
+    background: #BDFF51;
+    border-radius: 7px;
+}
+
+
+@keyframes slide {
+        0%{
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            transform: translate3d(-1692px, 0, 0);
+    }
+}
+
+
+
+@media (max-width: 425px) and (min-width: 320px){
+
+    body{
+        height: auto;
+    }   
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 4em;
+    }
+    input{
+        width: 6em;
+        height: 3em;
+    }
+    button{
+        width: 6em;
+        height: 2em;
+    }
+    ul{
+        padding: 0;
+    }
+    li{
+        font-size: 1.5em;
+        width: auto;
+        margin: .1;
+    }
+    #background-img{
+    /* height: 100vh; */
+    width: 414px;
+    height: auto;
+ }
+}
